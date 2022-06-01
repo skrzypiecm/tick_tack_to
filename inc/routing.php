@@ -2,7 +2,7 @@
 
  $routes = [];
 
- function route(string $path, $callback) : void
+ function route(string $path, callable $callback) : void
  {
      global $routes;
      $routes[$path] = $callback;
